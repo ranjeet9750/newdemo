@@ -1,5 +1,7 @@
 export const Details = {
   contact: {
+    "heading":"",
+    "desc":"",
     "header":["Broker Type","Broker Ref","Access","Mailid"],
     "rowsData": [
       { "Broker_Type": "DUA - Castel", "Broker_Ref": 2228, "Access": "DUA", "Mailid": "DWDEV.DUA.2228@outlook.com"},
