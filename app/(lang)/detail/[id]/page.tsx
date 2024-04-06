@@ -1,7 +1,9 @@
-import React from 'react'
-const DetailPage = () => {
+import { data } from "@/app/config/company"
+const DetailPage = ({ params }) => {
+    console.log(params.id)
+    console.log(data[params.id])
   return (
-    <div>DetailPage</div>
+    <div></div>
   )
 }
 

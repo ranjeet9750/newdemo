@@ -90,7 +90,7 @@ const ShowInfo = ({ data = [],name }) => {
     const PageLinks = ({ text,link }) => {
       
         return (
-            <a href={"/detail/idaa"}> <div key={text}  className="hover:cursor-pointer p-[7px]  m-[5px]">
+            <a href={"/detail/contact"}> <div key={text}  className="hover:cursor-pointer p-[7px]  m-[5px]">
             {text}
           </div>
           </a>
