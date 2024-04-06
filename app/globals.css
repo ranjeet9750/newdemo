@@ -2,28 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-   
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* font-family: "Lato", sans-serif; */
+  
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+.catalogue-table {
+  font-family: arial, sans-serif;
+  text-align: center;
+  border: 1px solid #dddddd;
 }
+
+.table-div,
+.table-head-first,
+.table-head {
+  padding: 25px;
+}
+
+.table-div {
+  border-bottom: 1px solid #dddddd;
+  text-align: middle;
+}
+
+.table-div-first {
+  border-bottom: 1px solid #dddddd;
+  text-align: middle;
+  padding-left: 10px;
+}
+
+.table-head {
+  border-bottom: 2px solid #dddddd;
+  background-color: #06345e;
+  text-align: middle;
+}
+
+.table-head-first {
+  border-bottom: 2px solid #dddddd;
+  text-align: middle;
+}
+
+.empty-cell {
+  padding: 20px;
+}
+
+
