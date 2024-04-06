@@ -1,25 +1,16 @@
-export const data = {
+export const Details = {
   contact: {
-    email: "sales@kayempee.com",
-    phone: "(+91) 040-29803382",
-    address: [
-      "Plot No.14P, CIE Extn,",
-      "Gandhinagar, Balanagar,",
-      "Hyderabad, Telangana,",
-      "500037",
-    ],
-    unit1: [
-      "Plot No.14P, CIE Extn,",
-      "Gandhinagar, Balanagar,",
-      "Hyderabad, Telangana,",
-      "500037",
-    ],
-    unit2: [
-      "Plot No.14P, CIE Extn,",
-      "Gandhinagar, Balanagar,",
-      "Hyderabad, Telangana,",
-      "500037",
-    ],
+    "header":["a","b","c","d"],
+    "sku": [
+      { "a": "18", "b": 150, "c": "Box", "d": 2700},
+      {
+        "a": "12",
+        "b": 250,
+        "c": "Jumbo Jar",
+        "d": 3000,
+      }
+    ]
+
   },
   metaData: {
     about: {
@@ -34,3 +25,4 @@ export const data = {
     youtube: "https://www.youtube.com/@VijayChandraJ",
   },
 };
+
