@@ -16,21 +16,21 @@ const DetailPage = ({ params }) => {
 }
  
 const Table = ({ data=[] }) => {
-    const { sku=[] } = data;
+    const { rowsData=[] } = data;
     
   
-    const TableRow = ({ a, b, c, d }) => {
+    const TableRow = ({ Broker_Type,Broker_Ref,Access,Mailid }) => {
       return (
         <tr className="border-b-2 product-table-td ">
-          <td className="table-div-first">{a}</td>
-          <td className="table-div">{b}</td>
-          <td className="table-div">{c}</td>
-          <td className="table-div">{d}</td>
+          <td className="table-div-first">{Broker_Type}</td>
+          <td className="table-div">{Broker_Ref}</td>
+          <td className="table-div">{Access}</td>
+          <td className="table-div">{Mailid}</td>
         </tr>
       );
     };
   
-    const tabLeRow = sku.map(TableRow);
+    const tabLeRow = rowsData.map(TableRow);
     return (
       <table className='catalogue-table '>
         <thead style={{ borderRadius: '10px' }}>
