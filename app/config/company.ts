@@ -1,6 +1,7 @@
 export const Details = {
-  contact: {
+  a: {
     "heading":"",
+    "link":"https://pandionlinepitest.shipownersclub.com",
     "desc":"",
     "header":["Broker Type","Broker Ref","Access","Mailid"],
     "rowsData": [
@@ -17,7 +18,6 @@ export const Details = {
 	  { "Broker_Type": "PI", "Broker_Ref": 459, "Access": "RenewTC", "Mailid": "DWDEV.PI.RENEWTC.459@outlook.com"},
 	  { "Broker_Type": "PI", "Broker_Ref": 2160, "Access": "RenewTC", "Mailid": "DWDEV.PI.RENEWTC.100@outlook.com"},
     ],
-
   },
   metaData: {
     about: {

@@ -14,15 +14,15 @@ const DESC = {
   "P&IOnline": [
     {
       text: "DWTEST",
-      link: "https://pandionlinedwtest.shipownersclub.com/",
+      link: "a",
     },
     {
       text: "PREPROD",
-      link: "https://pandionlinedwtest.shipownersclub.com/",
+      link: "b",
     },
     {
       text: "PERFTEST",
-      link: "https://pandionlineperf.shipownersclub.com",
+      link: "c",
     },
     {
       text: "PITEST",
@@ -42,6 +42,48 @@ const DESC = {
     },
   ],
   azurePortal: [
+    {
+      text: "PERFTEST",
+      link: "https://pandionlineperf.shipownersclub.com",
+    },
+    {
+      text: "PITEST",
+      link: "https://pandionlinepitest.shipownersclub.com",
+    },
+    {
+      text: "DWDEV",
+      link: "https://pandionlinedwdev.shipownersclub.com",
+    },
+  ],
+  utom: [
+    {
+      text: "PERFTEST",
+      link: "https://pandionlineperf.shipownersclub.com",
+    },
+    {
+      text: "PITEST",
+      link: "https://pandionlinepitest.shipownersclub.com",
+    },
+    {
+      text: "DWDEV",
+      link: "https://pandionlinedwdev.shipownersclub.com",
+    },
+  ],
+  Product4: [
+    {
+      text: "PERFTEST",
+      link: "https://pandionlineperf.shipownersclub.com",
+    },
+    {
+      text: "PITEST",
+      link: "https://pandionlinepitest.shipownersclub.com",
+    },
+    {
+      text: "DWDEV",
+      link: "https://pandionlinedwdev.shipownersclub.com",
+    },
+  ],
+  Product5: [
     {
       text: "PERFTEST",
       link: "https://pandionlineperf.shipownersclub.com",
@@ -87,8 +129,9 @@ const Nav = () => {
 
 const ShowInfo = ({ data = [], name }) => {
   const PageLinks = ({ text, link }) => {
+    const  websiteLink=link.includes("https") ? link :`/detail/${link}`;
     return (
-      <a href={"/detail/contact"}>
+      <a href={websiteLink} target="_blank">
         {" "}
         <div
           key={text}
