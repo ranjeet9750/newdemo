@@ -6,8 +6,8 @@ const NavItemns = [
   { value: "P&I Online", key: "P&IOnline" },
   { value: "UTOM", key: "utom" },
   { value: "Azure Portal", key: "azurePortal" },
-  { value: "Product 4", key: "Product4" },
-  { value: "Product 5", key: "Product5" },
+  { value: "SharePoint", key: "Product4" },
+  { value: "Tools", key: "Product5" },
 ];
 
 const DESC = {
@@ -75,7 +75,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex justify-around  p-[10px] bg-blue-500 p-[20px] text-white">
+      <div className="flex justify-around  p-[10px] bg-blue-500 p-[20px] text-white bg-gradient-to-r from-violet-600 to-indigo-600">
         {listItems}
       </div>
       <div>
@@ -85,23 +85,27 @@ const Nav = () => {
   );
 };
 
-const ShowInfo = ({ data = [],name }) => {
-
-    const PageLinks = ({ text,link }) => {
-      
-        return (
-            <a href={"/detail/contact"}> <div key={text}  className="hover:cursor-pointer p-[7px]  m-[5px]">
-            {text}
-          </div>
-          </a>
-        );
-      };
-      const listItems = data.map(PageLinks);
-  return <div className="w-[80%] mx-auto my-[20px]  items-center justify-center">
-   <div className="text-3xl">{name}</div>
-    {listItems}
-    
-  </div>;
+const ShowInfo = ({ data = [], name }) => {
+  const PageLinks = ({ text, link }) => {
+    return (
+      <a href={"/detail/contact"}>
+        {" "}
+        <div
+          key={text}
+          className="hover:cursor-pointer  m-[10px] p-[15px] rounded-md font-medium  text-cyan-500 shadow-xl bg-white"
+        >
+          {text}
+        </div>
+      </a>
+    );
+  };
+  const listItems = data.map(PageLinks);
+  return (
+    <div className="w-[80%] mx-auto my-[20px]  items-center justify-center">
+      <div className="text-3xl">{name}</div>
+      {listItems}
+    </div>
+  );
 };
 
 export default Nav;
